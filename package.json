@@ -1,0 +1,45 @@
+{
+  "name": "nightwatch-ci-custom-commands",
+  "version": "0.9.0",
+  "description": "These are some custom commands.",
+  "main": "none",
+  "scripts": {
+    "test": "./runTests.sh",
+    "compile": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rpii/nightwatch-ci-custom-commands.git"
+  },
+  "keywords": [
+    "nightwatch",
+    "commands",
+    "assertions"
+  ],
+  "author": "rich peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpii/nightwatch-ci-custom-commands/issues"
+  },
+  "homepage": "https://github.com/rpii/nightwatch-ci-custom-commands",
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chromedriver": "~2.19",
+    "geckodriver": "^1.10.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^6.1.2",
+    "gulp-flatten": "^0.3.1",
+    "gulp-include": "^2.0.2",
+    "gulp-markdox": "^0.1.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-util": "^3.0.4",
+    "mockserver-client": "^1.0.3",
+    "nightwatch": "latest",
+    "selenium-server": "latest"
+  },
+  "dependencies": {
+    "easyimage": "^1.2.2"
+  }
+}
