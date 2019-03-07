@@ -36,6 +36,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-util": "^3.0.4",
     "mockserver-client": "^1.0.3",
+    "moment": "^2.24.0",
     "nightwatch": "latest",
     "selenium-server": "latest"
   },
