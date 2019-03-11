@@ -2,7 +2,7 @@
   "name": "nightwatch-ci-custom-commands",
   "version": "0.9.0",
   "description": "These are some custom commands.",
-  "main": "none",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./runTests.sh",
     "compile": "gulp"
