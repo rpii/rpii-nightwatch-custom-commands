@@ -1,7 +1,7 @@
 {
-  "name": "nightwatch-ci-custom-commands",
+  "name": "nightwatch-jest-commands",
   "version": "0.9.0",
-  "description": "These are some custom commands.",
+  "description": "These are some custom commands for integration with jest.",
   "main": "lib/index.js",
   "scripts": {
     "test": "./runTests.sh",
@@ -9,35 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rpii/nightwatch-ci-custom-commands.git"
+    "url": "git@github.com:rpii/nightwatch-jest-commands.git"
   },
   "keywords": [
     "nightwatch",
     "commands",
-    "assertions"
+    "jest"
   ],
   "author": "rich peters",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rpii/nightwatch-ci-custom-commands/issues"
+    "url": "https://github.com/rpii/nightwatch-jest-commands/issues"
   },
-  "homepage": "https://github.com/rpii/nightwatch-ci-custom-commands",
+  "homepage": "https://github.com/rpii/nightwatch-jest-commands",
   "devDependencies": {
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.9.0",
-    "gulp": "^3.8.11",
-    "gulp-babel": "^6.1.2",
-    "gulp-flatten": "^0.3.1",
-    "gulp-include": "^2.0.2",
-    "gulp-markdox": "^0.1.2",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.0",
-    "gulp-util": "^3.0.4",
-    "mockserver-client": "^1.0.3",
+    "jest": "^24.5.0",
     "moment": "^2.24.0",
     "nightwatch": "latest"
-  },
-  "dependencies": {
-    "easyimage": "^1.2.2"
   }
 }
