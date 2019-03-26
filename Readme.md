@@ -1,49 +1,24 @@
 ## Nightwatch custom commands and assertions
 
-[![Build Status](https://travis-ci.org/maxgalbu/nightwatch-custom-commands-assertions.svg?branch=master)](https://travis-ci.org/maxgalbu/nightwatch-custom-commands-assertions) [![npm version](https://badge.fury.io/js/nightwatch-custom-commands-assertions.svg)](http://badge.fury.io/js/nightwatch-custom-commands-assertions)
+These are some commands I use when I'm testing with nightwatch.js and selenium.
 
-These are some commands and assertion I use when I'm testing with nightwatch.js and selenium.
-
-### How to use these things?
+### How do you use these commands?
 
 You can install it using npm:
 
 ```
-npm install nightwatch-custom-commands-assertions --save-dev
-```
-
-Then, open the nightwatch.json file in your editor (or [create it if it doesn't exist](http://nightwatchjs.org/guide#settings-file)) and edit the `custom_commands_path` and `custom_assertions_path` keys so they look like this:
+npm install @rpii/nightwatch-custom-commands --save-dev
 
 ```json
-{
-	... //your config
-	
-	"custom_commands_path" : "node_modules/nightwatch-custom-commands-assertions/js/commands",
-	"custom_assertions_path" : "node_modules/nightwatch-custom-commands-assertions/js/assertions",
-	
-	... //your config again
-}
+const ciCommands = require('@rpii/nightwatch-custom-commands');
+module.exports = {
+
+    "test_workers": false,
+    "src_folders": ["tests"],
+    "globals_path": "globals/globals.js",
+    "custom_commands_path": [ciCommands.commandPath],
 ```
 
-Now you should be able to use these commands/assertions when you call `nightwatch --test`.
-
-### Alternative ways of installing
-
-- Go into your `tests` folder (or where your nightwatch.json is) and do:
-  
-  ```
-  git clone https://github.com/maxgalbu/nightwatch-custom-commands-assertions.git
-  ```
-
-- Download the zipped repository [here](https://github.com/maxgalbu/nightwatch-custom-commands-assertions/archive/master.zip) and extract it wherever you want
-
-You then need to open your nightwatch.json and edit `custom_commands_path` and `custom_assertions_path` according to where you cloned or extracted the repository. 
+Now you should be able to use these commands when you call `nightwatch --test`.
 
 
-### Contributing
-
-See [Contributing.md](https://github.com/maxgalbu/nightwatch-custom-commands-assertions/blob/master/Contributing.md).
-
-### List of commands
-
-See [the docs folder](https://github.com/maxgalbu/nightwatch-custom-commands-assertions/blob/master/docs)
