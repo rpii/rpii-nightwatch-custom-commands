@@ -27,6 +27,7 @@
     "nightwatch": "latest"
   },
   "dependencies": {
-    "request-promise-native": "^1.0.7"
+    "request-promise-native": "^1.0.7",
+    "xlsx": "^0.14.1"
   }
 }
