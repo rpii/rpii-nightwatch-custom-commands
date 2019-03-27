@@ -20,5 +20,6 @@ module.exports = {
 ```
 
 Now you should be able to use these commands when you call `nightwatch --test`.
+In particular, there is a takeScreenshot command which takes a screenshot and stores it so it can be displayed in the @rpii/nightwatch-html-reporter
 
 
