@@ -1,6 +1,6 @@
 {
   "name": "@rpii/nightwatch-custom-commands",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "These are some custom commands and assertions for nightwatch testing.",
   "main": "lib/index.js",
   "scripts": {

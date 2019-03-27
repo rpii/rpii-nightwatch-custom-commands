@@ -1,6 +1,8 @@
 ## Nightwatch custom commands and assertions
 
-These are some commands I use when I'm testing with nightwatch.js and selenium.
+These are some useful commands that integrate with the nightwatch-html-reporter:
+* takeScreenshot
+* logMessage
 
 ### How do you use these commands?
 
@@ -20,6 +22,5 @@ module.exports = {
 ```
 
 Now you should be able to use these commands when you call `nightwatch --test`.
-In particular, there is a takeScreenshot command which takes a screenshot and stores it so it can be displayed in the @rpii/nightwatch-html-reporter
 
-
+-
